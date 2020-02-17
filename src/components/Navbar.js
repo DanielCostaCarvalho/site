@@ -38,11 +38,12 @@ const Navbar = class extends React.Component {
         className="navbar is-transparent"
         role="navigation"
         aria-label="main-navigation"
+	style={{ backgroundColor: '#222' }}
       >
         <div className="container">
           <div className="navbar-brand">
             <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+              <h1 style={{ width: '88px', color: '#eee' }}><strong>DANIEL CARVALHO</strong></h1>
             </Link>
             {/* Hamburger menu */}
             <div
@@ -58,28 +59,26 @@ const Navbar = class extends React.Component {
           <div
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
+	    style={{backgroundColor: '#333'}}
           >
             <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
+              <Link className="navbar-item" to="/about" style={{color: '#eee'}}>
+                Sobre
               </Link>
-              <Link className="navbar-item" to="/products">
+              <Link className="navbar-item" to="/products" style={{color: '#eee'}}>
                 Products
               </Link>
-              <Link className="navbar-item" to="/blog">
+              <Link className="navbar-item" to="/blog" style={{color: '#eee'}}>
                 Blog
               </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
+              <Link className="navbar-item" to="/contact" style={{color: '#eee'}}>
+                Contatos
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
               <a
                 className="navbar-item"
-                href="https://github.com/netlify-templates/gatsby-starter-netlify-cms"
+                href="https://github.com/DanielCostaCarvalho"
                 target="_blank"
                 rel="noopener noreferrer"
               >
