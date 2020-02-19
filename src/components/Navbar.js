@@ -1,7 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
 
 const Navbar = class extends React.Component {
   constructor(props) {
@@ -70,9 +69,6 @@ const Navbar = class extends React.Component {
               </Link>
               <Link className="navbar-item" to="/blog" style={{color: '#eee'}}>
                 Blog
-              </Link>
-              <Link className="navbar-item" to="/contact" style={{color: '#eee'}}>
-                Contatos
               </Link>
             </div>
             <div className="navbar-end has-text-centered">
